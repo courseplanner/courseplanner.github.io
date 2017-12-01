@@ -12,8 +12,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="/brython.js"></script>
 	</head>
-	<body>
+	<body onload="brython()">
+
+		<script type="text/python" src="course-mapper.py">
+			<!-- from browser import document, alert -->
+			<!-- document[] -->
+		</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -112,7 +118,7 @@
 									<input type="text" name="senspring3">
 									Senior Spring
 									<input type="text" name="senspring4">
-									<input type="submit" value="Submit">
+									<input id="zone"><button id="submit">Generate</button>
 								</form>
 							</article>
 
